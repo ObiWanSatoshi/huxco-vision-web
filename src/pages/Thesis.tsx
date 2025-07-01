@@ -1,90 +1,92 @@
 
-import { CheckCircle, TrendingUp, Shield, Target, Users, Award } from 'lucide-react';
+import { CheckCircle, Globe, Shield, Zap, Users, Award } from 'lucide-react';
 
 const Thesis = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-slate-900 text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 py-20">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(147,51,234,0.1),transparent_50%)]" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Investment Thesis</h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              Our investment philosophy is built on fundamental principles that have 
-              proven successful across market cycles and economic environments.
+              The internet is undergoing its most significant transformation since its inception. 
+              We invest in the technologies and founders building this new decentralized, 
+              private, and immersive digital frontier.
             </p>
           </div>
         </div>
       </section>
 
       {/* Core Philosophy */}
-      <section className="py-20">
+      <section className="py-20 bg-slate-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Investment Philosophy</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We believe in making thoughtful, research-driven investments in businesses 
-              with strong fundamentals and exceptional growth potential.
+            <h2 className="text-3xl font-bold mb-4">The Web Evolution Thesis</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              We believe the next phase of the internet will be defined by three fundamental shifts 
+              that create unprecedented opportunities for innovation and value creation.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6">Key Principles</h3>
+              <h3 className="text-2xl font-semibold mb-6 text-purple-400">Core Principles</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-purple-400 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Quality Over Quantity</h4>
-                    <p className="text-gray-600">We focus on a concentrated portfolio of high-quality businesses rather than broad diversification.</p>
+                    <h4 className="font-semibold text-white">Decentralization Over Centralization</h4>
+                    <p className="text-gray-300">Power is shifting from centralized platforms to distributed networks, creating new models for value creation and capture.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-teal-400 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Long-Term Perspective</h4>
-                    <p className="text-gray-600">Our investment horizon spans years, not quarters, allowing us to focus on sustainable value creation.</p>
+                    <h4 className="font-semibold text-white">Privacy as a Fundamental Right</h4>
+                    <p className="text-gray-300">Users demand control over their data, driving adoption of zero-knowledge proofs and privacy-preserving technologies.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-orange-400 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Operational Excellence</h4>
-                    <p className="text-gray-600">We actively work with portfolio companies to improve operations and drive growth.</p>
+                    <h4 className="font-semibold text-white">Digital-Physical Convergence</h4>
+                    <p className="text-gray-300">The boundaries between digital and physical worlds are dissolving through AR/VR and spatial computing.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-3 mt-1 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-blue-400 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Risk-Adjusted Returns</h4>
-                    <p className="text-gray-600">We prioritize investments that offer attractive returns relative to their risk profile.</p>
+                    <h4 className="font-semibold text-white">AI-Native Infrastructure</h4>
+                    <p className="text-gray-300">The next generation of applications will be built AI-first, requiring new infrastructure and interaction paradigms.</p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-semibold text-slate-900 mb-6">Investment Criteria</h3>
+            <div className="bg-slate-800 p-8 rounded-xl border border-purple-500/20">
+              <h3 className="text-2xl font-semibold mb-6 text-teal-400">Investment Criteria</h3>
               <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-slate-900">Revenue Range</span>
-                  <span className="text-gray-600">$10M - $500M</span>
+                <div className="flex justify-between items-center py-2 border-b border-slate-700">
+                  <span className="font-medium text-white">Stage</span>
+                  <span className="text-gray-300">Seed to Series A</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-slate-900">EBITDA Margin</span>
-                  <span className="text-gray-600">≥15%</span>
+                <div className="flex justify-between items-center py-2 border-b border-slate-700">
+                  <span className="font-medium text-white">Check Size</span>
+                  <span className="text-gray-300">$250K - $2M</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-slate-900">Market Position</span>
-                  <span className="text-gray-600">Top 3 in sector</span>
+                <div className="flex justify-between items-center py-2 border-b border-slate-700">
+                  <span className="font-medium text-white">Geography</span>
+                  <span className="text-gray-300">Global, Remote-First</span>
                 </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-slate-900">Growth Rate</span>
-                  <span className="text-gray-600">10%+ annually</span>
+                <div className="flex justify-between items-center py-2 border-b border-slate-700">
+                  <span className="font-medium text-white">Sectors</span>
+                  <span className="text-gray-300">Crypto, AI, Deep Tech</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
-                  <span className="font-medium text-slate-900">Management Quality</span>
-                  <span className="text-gray-600">Exceptional</span>
+                  <span className="font-medium text-white">Team Quality</span>
+                  <span className="text-gray-300">World-Class</span>
                 </div>
               </div>
             </div>
@@ -92,103 +94,181 @@ const Thesis = () => {
         </div>
       </section>
 
-      {/* Investment Strategy */}
-      <section className="py-20 bg-gray-50">
+      {/* Three Pillars Deep Dive */}
+      <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Investment Strategy</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our systematic approach to identifying and nurturing exceptional investment opportunities.
+            <h2 className="text-3xl font-bold mb-4">The Three Pillars</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Our investment focus is organized around three transformative themes 
+              that define the future of human-computer interaction.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                <Target className="h-6 w-6 text-blue-600" />
+          <div className="space-y-12">
+            {/* Freedom */}
+            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-purple-500/20">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="lg:col-span-1">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
+                    <Globe className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-purple-400 mb-4">Freedom</h3>
+                  <p className="text-gray-300">
+                    Decentralized protocols that eliminate single points of failure and give users 
+                    true ownership of their digital assets and identity.
+                  </p>
+                </div>
+                <div className="lg:col-span-2">
+                  <h4 className="text-lg font-semibold text-white mb-4">Investment Areas:</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-purple-400 mb-2">DeFi Infrastructure</h5>
+                      <p className="text-sm text-gray-300">DEXs, lending protocols, yield farming platforms</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-purple-400 mb-2">Web3 Identity</h5>
+                      <p className="text-sm text-gray-300">Self-sovereign identity, credential systems</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-purple-400 mb-2">DAOs & Governance</h5>
+                      <p className="text-sm text-gray-300">Decentralized decision-making platforms</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-purple-400 mb-2">Layer 1/2 Scaling</h5>
+                      <p className="text-sm text-gray-300">Blockchain infrastructure and scaling solutions</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-4">Sector Focus</h3>
-              <p className="text-gray-600 mb-4">
-                We concentrate on industries where we have deep expertise and can add significant value.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Technology & Software</li>
-                <li>• Healthcare Services</li>
-                <li>• Financial Services</li>
-                <li>• Industrial Manufacturing</li>
-              </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
-                <TrendingUp className="h-6 w-6 text-green-600" />
+            {/* Privacy */}
+            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-teal-500/20">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="lg:col-span-1">
+                  <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-xl flex items-center justify-center mb-6">
+                    <Shield className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-teal-400 mb-4">Privacy</h3>
+                  <p className="text-gray-300">
+                    Technologies that enable private computation and data sovereignty while 
+                    maintaining the benefits of network participation.
+                  </p>
+                </div>
+                <div className="lg:col-span-2">
+                  <h4 className="text-lg font-semibold text-white mb-4">Investment Areas:</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-teal-400 mb-2">Zero-Knowledge Proofs</h5>
+                      <p className="text-sm text-gray-300">zk-SNARKs, zk-STARKs, privacy protocols</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-teal-400 mb-2">Secure Computation</h5>
+                      <p className="text-sm text-gray-300">Multi-party computation, homomorphic encryption</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-teal-400 mb-2">Private Messaging</h5>
+                      <p className="text-sm text-gray-300">End-to-end encrypted communication platforms</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-teal-400 mb-2">Data Ownership</h5>
+                      <p className="text-sm text-gray-300">Personal data vaults and monetization platforms</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-4">Value Creation</h3>
-              <p className="text-gray-600 mb-4">
-                We work closely with management teams to implement growth strategies and operational improvements.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Strategic Planning</li>
-                <li>• Operational Efficiency</li>
-                <li>• Market Expansion</li>
-                <li>• Technology Integration</li>
-              </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                <Shield className="h-6 w-6 text-purple-600" />
+            {/* Immersion */}
+            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-orange-500/20">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div className="lg:col-span-1">
+                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6">
+                    <Zap className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-orange-400 mb-4">Immersion</h3>
+                  <p className="text-gray-300">
+                    Spatial computing and mixed reality technologies that create seamless 
+                    integration between digital and physical experiences.
+                  </p>
+                </div>
+                <div className="lg:col-span-2">
+                  <h4 className="text-lg font-semibold text-white mb-4">Investment Areas:</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-orange-400 mb-2">AR/VR Platforms</h5>
+                      <p className="text-sm text-gray-300">Metaverse infrastructure, virtual worlds</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-orange-400 mb-2">Spatial Computing</h5>
+                      <p className="text-sm text-gray-300">3D interfaces, gesture recognition</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-orange-400 mb-2">Digital Twins</h5>
+                      <p className="text-sm text-gray-300">Real-world simulation and modeling</p>
+                    </div>
+                    <div className="bg-slate-700/50 p-4 rounded-lg">
+                      <h5 className="font-medium text-orange-400 mb-2">Neural Interfaces</h5>
+                      <p className="text-sm text-gray-300">Brain-computer interfaces, biometric sensors</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-4">Risk Management</h3>
-              <p className="text-gray-600 mb-4">
-                Our disciplined approach to risk assessment protects capital while pursuing growth.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-1">
-                <li>• Comprehensive Due Diligence</li>
-                <li>• Diversification Strategy</li>
-                <li>• Continuous Monitoring</li>
-                <li>• Exit Planning</li>
-              </ul>
             </div>
           </div>
         </div>
       </section>
 
       {/* Market Outlook */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Market Outlook</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our perspective on current market conditions and emerging opportunities.
+            <h2 className="text-3xl font-bold mb-4">Market Outlook</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              We're at an inflection point where these technologies are moving from 
+              experimental to mainstream adoption.
             </p>
           </div>
 
-          <div className="bg-slate-900 text-white p-12 rounded-xl">
+          <div className="bg-slate-800/80 backdrop-blur-sm p-12 rounded-xl border border-purple-500/20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Current Environment</h3>
+                <h3 className="text-2xl font-semibold mb-6 text-purple-400">Current Environment</h3>
                 <p className="text-gray-300 mb-4">
-                  Despite market volatility, we see significant opportunities in businesses that 
-                  have adapted to changing economic conditions and demonstrated resilience.
+                  The convergence of crypto maturity, AI breakthroughs, and spatial computing 
+                  advances creates unprecedented opportunities for startups building at the 
+                  intersection of these technologies.
                 </p>
                 <p className="text-gray-300">
-                  Our focus remains on companies with strong balance sheets, recurring revenue 
-                  models, and the ability to gain market share during periods of uncertainty.
+                  We're seeing increased institutional adoption, regulatory clarity, and 
+                  user demand for alternatives to centralized platforms, creating a perfect 
+                  storm for web evolution technologies.
                 </p>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold mb-6">Future Opportunities</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-slate-800 p-4 rounded-lg">
-                    <Users className="h-8 w-8 text-blue-400 mb-2" />
-                    <h4 className="font-semibold mb-1">Digital Transformation</h4>
-                    <p className="text-sm text-gray-300">Businesses embracing technology</p>
+                <h3 className="text-2xl font-semibold mb-6 text-teal-400">Key Catalysts</h3>
+                <div className="grid grid-cols-1 gap-4">
+                  <div className="bg-slate-700/50 p-4 rounded-lg flex items-center">
+                    <Users className="h-6 w-6 text-purple-400 mb-2 mr-3" />
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">Mainstream Crypto Adoption</h4>
+                      <p className="text-sm text-gray-300">Institutional investment and regulatory frameworks</p>
+                    </div>
                   </div>
-                  <div className="bg-slate-800 p-4 rounded-lg">
-                    <Award className="h-8 w-8 text-green-400 mb-2" />
-                    <h4 className="font-semibold mb-1">ESG Focus</h4>
-                    <p className="text-sm text-gray-300">Sustainable business practices</p>
+                  <div className="bg-slate-700/50 p-4 rounded-lg flex items-center">
+                    <Award className="h-6 w-6 text-teal-400 mb-2 mr-3" />
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">AI Infrastructure Maturity</h4>
+                      <p className="text-sm text-gray-300">Widespread availability of powerful AI models</p>
+                    </div>
+                  </div>
+                  <div className="bg-slate-700/50 p-4 rounded-lg flex items-center">
+                    <Zap className="h-6 w-6 text-orange-400 mb-2 mr-3" />
+                    <div>
+                      <h4 className="font-semibold mb-1 text-white">Hardware Acceleration</h4>
+                      <p className="text-sm text-gray-300">Improved AR/VR devices and neural interfaces</p>
+                    </div>
                   </div>
                 </div>
               </div>

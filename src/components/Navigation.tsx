@@ -8,19 +8,21 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
+    { name: 'About', path: '/about' },
     { name: 'Thesis', path: '/thesis' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Contact Us', path: '/contact' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <NavLink to="/" className="flex items-center">
-            <span className="text-2xl font-bold text-slate-800">HuxCo</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              HuxCo
+            </span>
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -30,14 +32,15 @@ const Navigation = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  `px-3 py-2 text-sm font-medium transition-all duration-200 relative group ${
                     isActive
-                      ? 'text-slate-800 border-b-2 border-slate-800'
-                      : 'text-gray-600 hover:text-slate-800'
+                      ? 'text-purple-400'
+                      : 'text-gray-300 hover:text-white'
                   }`
                 }
               >
                 {item.name}
+                <span className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-purple-400 to-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
               </NavLink>
             ))}
           </div>
@@ -46,7 +49,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-slate-800 p-2"
+              className="text-gray-300 hover:text-white p-2 transition-colors"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -56,16 +59,16 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-100">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-slate-800/50 backdrop-blur-sm border-t border-slate-700">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}
                   to={item.path}
                   className={({ isActive }) =>
-                    `block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                    `block px-3 py-2 text-base font-medium transition-colors duration-200 rounded-md ${
                       isActive
-                        ? 'text-slate-800 bg-gray-50'
-                        : 'text-gray-600 hover:text-slate-800 hover:bg-gray-50'
+                        ? 'text-purple-400 bg-slate-700/50'
+                        : 'text-gray-300 hover:text-white hover:bg-slate-700/30'
                     }`
                   }
                   onClick={() => setIsMenuOpen(false)}
