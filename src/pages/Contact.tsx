@@ -15,7 +15,6 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Here you would typically send the form data to your backend
     console.log('Form submitted:', formData);
     
     toast({
@@ -23,7 +22,6 @@ const Contact = () => {
       description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
     });
     
-    // Reset form
     setFormData({ name: '', email: '', company: '', message: '' });
   };
 
@@ -35,13 +33,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20">
+      <section className="minimal-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">Contact Us</h1>
+            <p className="text-xl text-white/70 leading-relaxed font-light">
               Ready to explore investment opportunities or learn more about HuxCo? 
               We'd love to hear from you.
             </p>
@@ -55,10 +53,10 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Get In Touch</h2>
+              <h2 className="text-3xl font-light text-white/90 mb-8 tracking-tight">Get In Touch</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
                     Full Name *
                   </label>
                   <input
@@ -68,13 +66,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
                     placeholder="Your full name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">
                     Email Address *
                   </label>
                   <input
@@ -84,13 +82,13 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
                     placeholder="your.name@company.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-white/80 mb-2">
                     Company/Organization
                   </label>
                   <input
@@ -99,13 +97,13 @@ const Contact = () => {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
                     placeholder="Your company name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -115,14 +113,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
                     placeholder="Tell us about your inquiry or investment needs..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                  className="w-full bg-tech-accent text-white font-medium py-4 px-6 rounded hover:bg-tech-accent/80 transition-all duration-200"
                 >
                   Send Message
                 </button>
@@ -131,38 +129,38 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Contact Information</h2>
+              <h2 className="text-3xl font-light text-white/90 mb-8 tracking-tight">Contact Information</h2>
               
               <div className="space-y-8">
                 <div className="flex">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
+                    <Phone className="h-6 w-6 text-white/80" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500">Monday - Friday, 9:00 AM - 6:00 PM EST</p>
+                    <h3 className="text-lg font-medium text-white/90 mb-2">Phone</h3>
+                    <p className="text-white/70">+1 (555) 123-4567</p>
+                    <p className="text-sm text-white/50">Monday - Friday, 9:00 AM - 6:00 PM EST</p>
                   </div>
                 </div>
 
                 <div className="flex">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                    <Mail className="h-6 w-6 text-green-600" />
+                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
+                    <Mail className="h-6 w-6 text-white/80" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">Email</h3>
-                    <p className="text-gray-600">info@huxco.com</p>
-                    <p className="text-sm text-gray-500">We respond within 24 hours</p>
+                    <h3 className="text-lg font-medium text-white/90 mb-2">Email</h3>
+                    <p className="text-white/70">info@huxco.com</p>
+                    <p className="text-sm text-white/50">We respond within 24 hours</p>
                   </div>
                 </div>
 
                 <div className="flex">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                    <MapPin className="h-6 w-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
+                    <MapPin className="h-6 w-6 text-white/80" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">Office</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-medium text-white/90 mb-2">Office</h3>
+                    <p className="text-white/70">
                       123 Financial District<br />
                       New York, NY 10004<br />
                       United States
@@ -171,12 +169,12 @@ const Contact = () => {
                 </div>
 
                 <div className="flex">
-                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
-                    <Clock className="h-6 w-6 text-orange-600" />
+                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
+                    <Clock className="h-6 w-6 text-white/80" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-slate-900 mb-2">Business Hours</h3>
-                    <p className="text-gray-600">
+                    <h3 className="text-lg font-medium text-white/90 mb-2">Business Hours</h3>
+                    <p className="text-white/70">
                       Monday - Friday: 9:00 AM - 6:00 PM EST<br />
                       Saturday - Sunday: Closed
                     </p>
@@ -184,14 +182,14 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Additional Info */}
-              <div className="mt-12 p-6 bg-gray-50 rounded-xl">
-                <h3 className="text-lg font-semibold text-slate-900 mb-4">Investment Inquiries</h3>
-                <p className="text-gray-600 mb-4">
+              {/* Investment Inquiries */}
+              <div className="mt-12 p-6 bg-card/50 backdrop-blur-sm rounded border border-white/10">
+                <h3 className="text-lg font-medium text-white/90 mb-4">Investment Inquiries</h3>
+                <p className="text-white/70 mb-4 font-light leading-relaxed">
                   For investment opportunities and partnership discussions, please 
                   contact our investment team directly at:
                 </p>
-                <p className="font-medium text-slate-900">investments@huxco.com</p>
+                <p className="font-medium text-white/90">investments@huxco.com</p>
               </div>
             </div>
           </div>
