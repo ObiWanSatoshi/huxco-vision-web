@@ -1,37 +1,36 @@
 
-import { ArrowRight, Shield, Zap, Globe } from 'lucide-react';
+import { ArrowRight, Shield, Globe, Zap } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="bg-slate-900 text-white">
+    <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(147,51,234,0.1),transparent_50%)]" />
+      <section className="relative minimal-gradient">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl md:text-6xl font-light leading-tight mb-6 tracking-tight">
               Investing in the
-              <span className="block bg-gradient-to-r from-purple-400 via-blue-400 to-teal-400 bg-clip-text text-transparent">
+              <span className="block text-white/90 font-normal">
                 Evolution of the Web
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
-              HuxCo is a boutique venture capital firm partnering with visionary founders 
-              building the future of freedom, privacy, and immersion through crypto, AI, 
-              and deep tech innovations.
+            <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">
+              A boutique venture capital firm partnering with visionary founders 
+              building the future through crypto, AI, and deep tech innovations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <NavLink
                 to="/thesis"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 transform hover:scale-105"
+                className="inline-flex items-center px-8 py-4 bg-tech-accent text-white font-medium rounded hover:bg-tech-accent/80 transition-all duration-200"
               >
-                Our Investment Thesis
-                <ArrowRight className="ml-2 h-5 w-5" />
+                Investment Thesis
+                <ArrowRight className="ml-2 h-4 w-4" />
               </NavLink>
               <NavLink
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 border border-purple-500/50 text-white font-semibold rounded-lg hover:bg-purple-500/10 hover:border-purple-400 transition-all duration-200"
+                className="inline-flex items-center px-8 py-4 border border-white/20 text-white font-medium rounded hover:bg-white/5 hover:border-white/30 transition-all duration-200"
               >
                 Partner With Us
               </NavLink>
@@ -41,49 +40,48 @@ const Home = () => {
       </section>
 
       {/* Three Pillars Section */}
-      <section className="py-20 bg-slate-800/50">
+      <section className="py-20 bg-card/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              The Three Pillars of Web Evolution
+            <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
+              Three Pillars of Web Evolution
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We invest in startups building the next generation of the internet 
-              through three fundamental principles.
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
+              We invest in technologies that define the next generation of the internet.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300 group hover:transform hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mb-6 group-hover:from-purple-400 group-hover:to-purple-500 transition-all duration-300">
-                <Globe className="h-6 w-6 text-white" />
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
+              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
+                <Globe className="h-6 w-6 text-white/80" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-purple-400">Freedom</h3>
-              <p className="text-gray-300">
-                Decentralized protocols and platforms that liberate users from centralized 
-                control, enabling true digital sovereignty and permissionless innovation.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Freedom</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                Decentralized protocols enabling true digital sovereignty and 
+                permissionless innovation.
               </p>
             </div>
 
-            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-teal-500/20 hover:border-teal-400/40 transition-all duration-300 group hover:transform hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg flex items-center justify-center mb-6 group-hover:from-teal-400 group-hover:to-teal-500 transition-all duration-300">
-                <Shield className="h-6 w-6 text-white" />
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
+              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
+                <Shield className="h-6 w-6 text-white/80" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-teal-400">Privacy</h3>
-              <p className="text-gray-300">
-                Zero-knowledge proofs, encryption technologies, and privacy-preserving 
-                infrastructure that protects user data while enabling seamless experiences.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Privacy</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                Zero-knowledge proofs and encryption technologies protecting user data 
+                while enabling seamless experiences.
               </p>
             </div>
 
-            <div className="bg-slate-800/80 backdrop-blur-sm p-8 rounded-xl border border-orange-500/20 hover:border-orange-400/40 transition-all duration-300 group hover:transform hover:scale-105">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg flex items-center justify-center mb-6 group-hover:from-orange-400 group-hover:to-orange-500 transition-all duration-300">
-                <Zap className="h-6 w-6 text-white" />
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
+              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
+                <Zap className="h-6 w-6 text-white/80" />
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-orange-400">Immersion</h3>
-              <p className="text-gray-300">
-                AR/VR, spatial computing, and metaverse technologies that create 
-                immersive digital experiences and blur the lines between physical and digital worlds.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Immersion</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                Spatial computing and metaverse technologies creating immersive 
+                digital experiences.
               </p>
             </div>
           </div>
@@ -91,44 +89,46 @@ const Home = () => {
       </section>
 
       {/* Investment Focus Section */}
-      <section className="py-20 bg-slate-900">
+      <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Investment Focus</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We partner with exceptional founders across three key verticals 
-              shaping the future of technology.
+            <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Investment Focus</h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
+              Early-stage companies across three key verticals shaping the future.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">₿</span>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl font-light text-white/90">₿</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-purple-400">Crypto & Web3</h3>
-              <p className="text-gray-300">
-                DeFi protocols, infrastructure, and applications building the decentralized financial system of the future.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Crypto & Web3</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                DeFi protocols, infrastructure, and applications building 
+                decentralized financial systems.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">AI</span>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl font-light text-white/90">AI</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-teal-400">Artificial Intelligence</h3>
-              <p className="text-gray-300">
-                Machine learning platforms, autonomous systems, and AI-powered applications transforming industries.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Artificial Intelligence</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                Machine learning platforms and AI-powered applications 
+                transforming industries.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-white">∞</span>
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-xl font-light text-white/90">∞</span>
               </div>
-              <h3 className="text-xl font-semibold mb-4 text-orange-400">Deep Tech</h3>
-              <p className="text-gray-300">
-                Quantum computing, biotech, robotics, and breakthrough technologies solving humanity's biggest challenges.
+              <h3 className="text-xl font-medium mb-4 text-white/90">Deep Tech</h3>
+              <p className="text-white/60 font-light leading-relaxed">
+                Quantum computing, biotech, and breakthrough technologies 
+                solving fundamental challenges.
               </p>
             </div>
           </div>
@@ -136,21 +136,20 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-purple-900/50 to-blue-900/50">
+      <section className="py-20 bg-card/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-light mb-6 tracking-tight">
             Building the Future Together
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Are you building the next breakthrough in crypto, AI, or deep tech? 
-            Let's explore how we can partner to accelerate your vision.
+          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto font-light">
+            Partner with us to accelerate breakthrough technologies in crypto, AI, and deep tech.
           </p>
           <NavLink
             to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-200 transform hover:scale-105"
+            className="inline-flex items-center px-8 py-4 bg-tech-accent text-white font-medium rounded hover:bg-tech-accent/80 transition-all duration-200"
           >
             Start the Conversation
-            <ArrowRight className="ml-2 h-5 w-5" />
+            <ArrowRight className="ml-2 h-4 w-4" />
           </NavLink>
         </div>
       </section>
