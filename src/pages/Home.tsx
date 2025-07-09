@@ -1,5 +1,5 @@
 
-import { ArrowRight, Shield, Globe, Zap } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 
 const Home = () => {
@@ -11,77 +11,76 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl font-light leading-tight mb-6 tracking-tight">
-              Investing in the
+              Accelerating the Advent of
               <span className="block text-white/90 font-normal">
-                Evolution of the Web
+                Humanity's Golden Era
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">
-              A boutique venture capital firm partnering with visionary founders 
-              building the future through crypto, AI, and deep tech innovations.
+              A venture firm backing the builders of cryptographic trust, 
+              intelligent systems, and civilization-scale technologies.
+            </p>
+            <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">
+              We stand at the threshold of an epoch where immutable systems, 
+              intelligent infrastructure, and atomic breakthroughs converge 
+              to redefine the substrate of human civilization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <NavLink
                 to="/thesis"
-                className="inline-flex items-center px-8 py-4 bg-tech-accent text-white font-medium rounded hover:bg-tech-accent/80 transition-all duration-200"
+                className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20"
               >
-                Investment Thesis
+                Our Thesis
                 <ArrowRight className="ml-2 h-4 w-4" />
               </NavLink>
               <NavLink
                 to="/contact"
-                className="inline-flex items-center px-8 py-4 border border-white/20 text-white font-medium rounded hover:bg-white/5 hover:border-white/30 transition-all duration-200"
+                className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:bg-white/5 hover:border-white/40 transition-all duration-200"
               >
-                Partner With Us
+                Share Your Blueprint
               </NavLink>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Three Pillars Section */}
+      {/* Three Forces Section */}
       <section className="py-20 bg-card/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
-              Three Pillars of Web Evolution
+              The Three Forces We Bet On
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
-              We invest in technologies that define the next generation of the internet.
+              We back technologies that rewire trust, intelligence, and reality itself.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
-              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
-                <Globe className="h-6 w-6 text-white/80" />
-              </div>
-              <h3 className="text-xl font-medium mb-4 text-white/90">Freedom</h3>
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
+              <h3 className="text-xl font-medium mb-4 text-white/90">Unbreakable Systems</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                Decentralized protocols enabling true digital sovereignty and 
-                permissionless innovation.
+                Decentralized architectures that resist capture, coercion, and collapse. 
+                Trustless, permissionless networks designed to encode incorruptible rules 
+                into the fabric of the digital world.
               </p>
             </div>
 
-            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
-              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
-                <Shield className="h-6 w-6 text-white/80" />
-              </div>
-              <h3 className="text-xl font-medium mb-4 text-white/90">Privacy</h3>
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
+              <h3 className="text-xl font-medium mb-4 text-white/90">Intelligent Infrastructure</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                Zero-knowledge proofs and encryption technologies protecting user data 
-                while enabling seamless experiences.
+                AI-native platforms that learn, reason, and optimize across scale. 
+                From autonomous agents to adaptive tools, this pillar represents 
+                cognition embedded in code.
               </p>
             </div>
 
-            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover-lift group">
-              <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mb-6 group-hover:bg-white/15 transition-all duration-300">
-                <Zap className="h-6 w-6 text-white/80" />
-              </div>
-              <h3 className="text-xl font-medium mb-4 text-white/90">Immersion</h3>
+            <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
+              <h3 className="text-xl font-medium mb-4 text-white/90">Atomic Breakthroughs</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                Spatial computing and metaverse technologies creating immersive 
-                digital experiences.
+                AI applied to matter: biotech, energy, robotics, and manufacturing. 
+                Civilization-scale technologies born from solving problems 
+                in atoms, not bits.
               </p>
             </div>
           </div>
@@ -93,8 +92,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Investment Focus</h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
-              Early-stage companies across three key verticals shaping the future.
+            <p className="text-xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">
+              Crypto protocols that encode trust into mathematics. AI systems that amplify human cognition. 
+              Deep Tech applying intelligence to solve humanity's hardest problems with atoms, not bits. 
+              These are the domains where civilization's next chapter is being written.
             </p>
           </div>
 
@@ -103,10 +104,10 @@ const Home = () => {
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-xl font-light text-white/90">₿</span>
               </div>
-              <h3 className="text-xl font-medium mb-4 text-white/90">Crypto & Web3</h3>
+              <h3 className="text-xl font-medium mb-4 text-white/90">Crypto</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                DeFi protocols, infrastructure, and applications building 
-                decentralized financial systems.
+                Protocols that eliminate trust assumptions and encode 
+                incorruptible rules into digital infrastructure.
               </p>
             </div>
 
@@ -116,8 +117,8 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-medium mb-4 text-white/90">Artificial Intelligence</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                Machine learning platforms and AI-powered applications 
-                transforming industries.
+                Intelligent systems that reason, learn, and optimize 
+                across scales previously unimaginable.
               </p>
             </div>
 
@@ -127,8 +128,8 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-medium mb-4 text-white/90">Deep Tech</h3>
               <p className="text-white/60 font-light leading-relaxed">
-                Quantum computing, biotech, and breakthrough technologies 
-                solving fundamental challenges.
+                The application of AI to solve humanity's hardest problems 
+                with atoms, not bits. Civilization-scale breakthroughs.
               </p>
             </div>
           </div>
@@ -139,16 +140,17 @@ const Home = () => {
       <section className="py-20 bg-card/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-light mb-6 tracking-tight">
-            Building the Future Together
+            If You're Forging Tomorrow
           </h2>
           <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto font-light">
-            Partner with us to accelerate breakthrough technologies in crypto, AI, and deep tech.
+            Let's talk. We partner with builders who see the same epochal shift—and 
+            have the conviction to architect it.
           </p>
           <NavLink
             to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-tech-accent text-white font-medium rounded hover:bg-tech-accent/80 transition-all duration-200"
+            className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20"
           >
-            Start the Conversation
+            Start a Conversation
             <ArrowRight className="ml-2 h-4 w-4" />
           </NavLink>
         </div>
