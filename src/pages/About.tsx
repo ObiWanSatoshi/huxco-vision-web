@@ -16,7 +16,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light mb-6 tracking-tight">Our Mission</h2>
-            <p className="text-2xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">We fuel the primitives that render trust uncapturable, cognition boundless, and matter obedient to conscious intent. </p>
+            <p className="text-2xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">We back primitives that harden trust, awaken intelligence, and give humanity leverage over the world in which it was born.</p>
           </div>
         </div>
       </section>
