@@ -1,18 +1,12 @@
-
 import { Users, Award, Globe, Zap } from 'lucide-react';
-
 const About = () => {
-  return (
-    <div className="bg-black text-white">
+  return <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="minimal-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">The Genesis of HuxCo</h1>
-            <p className="text-xl text-white/70 leading-relaxed font-light">
-              We emerged from the conviction that civilization stands at a hinge moment—
-              where the substrate of trust, intelligence, and matter itself can be rewritten.
-            </p>
+            <p className="text-xl text-white/70 leading-relaxed font-light">We emerged from the conviction that civilization stands at a pivotal moment inflection point in a 10,000 years arc of technology progress. For the first time, the very substract of trust, intelligence, and matter itself can—and will—be rewritten.</p>
           </div>
         </div>
       </section>
@@ -137,8 +131,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default About;
