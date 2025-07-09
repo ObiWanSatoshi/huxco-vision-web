@@ -53,7 +53,7 @@ const About = () => {
                 <Award className="h-8 w-8 text-white/80" />
               </div>
               <h3 className="text-xl font-medium mb-4 text-white/90">Atomic Mastery</h3>
-              <p className="text-white/60 font-light leading-relaxed">For a future of abundance. Technologies that bend matter towards our future amongst the stars.</p>
+              <p className="text-white/60 font-light leading-relaxed">Technologies that bend matter towards humanity's next great milestone: our journey beyond Earth.</p>
             </div>
           </div>
         </div>
