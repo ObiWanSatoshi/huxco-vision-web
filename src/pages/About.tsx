@@ -68,14 +68,8 @@ const About = () => {
 
           <div className="bg-card/50 backdrop-blur-sm p-12 rounded border border-white/10">
             <div className="max-w-4xl mx-auto text-center">
-              <p className="text-xl text-white/80 font-light leading-relaxed mb-6">
-                Legacy systems are fraying. Cryptographic rails, self-teaching models, 
-                and AI-driven material science are converging into a singular moment of possibility.
-              </p>
-              <p className="text-lg text-white/70 font-light leading-relaxed">
-                Capital deployed at this hinge decides whether fracture becomes renaissance. 
-                We choose renaissance.
-              </p>
+              <p className="text-xl text-white/80 font-light leading-relaxed mb-6">A universal erosion of trust in institutions is coinciding with a golden era of technological progress.</p>
+              <p className="text-lg text-white/70 font-light leading-relaxed">We desire alternative futures, and seek the builders bold enough to bring them about.</p>
             </div>
           </div>
         </div>
