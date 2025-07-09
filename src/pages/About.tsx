@@ -69,8 +69,7 @@ const About = () => {
           <div className="bg-card/50 backdrop-blur-sm p-12 rounded border border-white/10">
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-xl text-white/80 font-light leading-relaxed mb-6">A universal erosion of trust in institutions is coinciding with a golden era of technological progress.</p>
-              <p className="text-lg text-white/70 font-light leading-relaxed">We desire alternative futures, and seek the builders bold enough to bring them about. 
-Audentis Fortuna iuvat</p>
+              <p className="text-lg text-white/70 font-light leading-relaxed">We desire alternative futures, and seek the builders bold enough to bring them about—audentes Fortuna iuvat.</p>
             </div>
           </div>
         </div>
