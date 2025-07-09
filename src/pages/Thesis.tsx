@@ -1,18 +1,12 @@
-
 import { CheckCircle, Globe, Shield, Zap, Users, Award } from 'lucide-react';
-
 const Thesis = () => {
-  return (
-    <div className="bg-black text-white">
+  return <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="minimal-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">Investment Thesis</h1>
-            <p className="text-xl text-white/70 leading-relaxed font-light">
-              Lasting progress rests on the quiet protocols that shape how civilizations 
-              coordinate, compute, and create. We back the architects of these new foundations.
-            </p>
+            <p className="text-xl text-white/70 leading-relaxed font-light">As a species we stand before a critical crossroad that necessitates the fusion of ancient wisdom built over thousands of years of enquiry into human existence with modern, recent learnings. In doing so, we should attempt to glean a clear understanding of what values and teachings we must code into tomorrow so that only the best of our traits endure in our increasingly digital future.</p>
           </div>
         </div>
       </section>
@@ -217,8 +211,6 @@ const Thesis = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Thesis;
