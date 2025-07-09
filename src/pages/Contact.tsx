@@ -1,196 +1,80 @@
 
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    console.log('Form submitted:', formData);
-    
-    toast({
-      title: "Message Sent",
-      description: "Thank you for your inquiry. We'll get back to you within 24 hours.",
-    });
-    
-    setFormData({ name: '', email: '', company: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="minimal-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">Share Your Blueprint</h1>
             <p className="text-xl text-white/70 leading-relaxed font-light">
-              Ready to explore investment opportunities or learn more about HuxCo? 
-              We'd love to hear from you.
+              If you're building the future, we're listening.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form and Info */}
+      {/* Contact Form */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div>
-              <h2 className="text-3xl font-light text-white/90 mb-8 tracking-tight">Get In Touch</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-2">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
-                    placeholder="Your full name"
-                  />
+          <div className="max-w-2xl mx-auto">
+            {/* Email Contact with Cool Graphic */}
+            <div className="bg-card/50 backdrop-blur-sm p-12 rounded border border-white/10 text-center relative overflow-hidden">
+              {/* Background Pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-0 left-0 w-full h-full">
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
+                    <defs>
+                      <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.5"/>
+                      </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#grid)" />
+                  </svg>
+                </div>
+              </div>
+
+              {/* Animated Icon */}
+              <div className="relative z-10">
+                <div className="w-24 h-24 mx-auto mb-8 relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-white/10 rounded-full animate-pulse"></div>
+                  <div className="absolute inset-2 bg-white/10 rounded-full flex items-center justify-center">
+                    <Mail className="h-10 w-10 text-white/80" />
+                  </div>
+                  {/* Orbital rings */}
+                  <div className="absolute inset-0 border border-white/20 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
+                  <div className="absolute inset-[-8px] border border-white/10 rounded-full animate-spin" style={{ animationDuration: '12s', animationDirection: 'reverse' }}></div>
                 </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white/80 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
-                    placeholder="your.name@company.com"
-                  />
+                <h2 className="text-2xl font-light mb-6 text-white/90 tracking-tight">Ready to Forge Tomorrow?</h2>
+                
+                <div className="mb-8">
+                  <a 
+                    href="mailto:forge@huxcogroup.com" 
+                    className="inline-flex items-center text-xl font-medium text-white/90 hover:text-white transition-colors"
+                  >
+                    forge@huxcogroup.com
+                    <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
                 </div>
 
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-white/80 mb-2">
-                    Company/Organization
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
-                    placeholder="Your company name"
-                  />
+                <div className="space-y-2 text-sm text-white/60">
+                  <p>Encrypted inbox. We respond within 72 hours.</p>
+                  <p>No decks—send principles, prototypes, and intent.</p>
                 </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-white/80 mb-2">
-                    Message *
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={6}
-                    className="w-full px-4 py-3 bg-card/50 border border-white/10 text-white placeholder-white/50 rounded focus:ring-2 focus:ring-tech-accent focus:border-transparent"
-                    placeholder="Tell us about your inquiry or investment needs..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-tech-accent text-white font-medium py-4 px-6 rounded hover:bg-tech-accent/80 transition-all duration-200"
-                >
-                  Send Message
-                </button>
-              </form>
+              </div>
             </div>
 
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-light text-white/90 mb-8 tracking-tight">Contact Information</h2>
-              
-              <div className="space-y-8">
-                <div className="flex">
-                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
-                    <Phone className="h-6 w-6 text-white/80" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white/90 mb-2">Phone</h3>
-                    <p className="text-white/70">+1 (555) 123-4567</p>
-                    <p className="text-sm text-white/50">Monday - Friday, 9:00 AM - 6:00 PM EST</p>
-                  </div>
-                </div>
-
-                <div className="flex">
-                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
-                    <Mail className="h-6 w-6 text-white/80" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white/90 mb-2">Email</h3>
-                    <p className="text-white/70">info@huxco.com</p>
-                    <p className="text-sm text-white/50">We respond within 24 hours</p>
-                  </div>
-                </div>
-
-                <div className="flex">
-                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
-                    <MapPin className="h-6 w-6 text-white/80" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white/90 mb-2">Office</h3>
-                    <p className="text-white/70">
-                      123 Financial District<br />
-                      New York, NY 10004<br />
-                      United States
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex">
-                  <div className="w-12 h-12 bg-white/10 rounded flex items-center justify-center mr-4">
-                    <Clock className="h-6 w-6 text-white/80" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-medium text-white/90 mb-2">Business Hours</h3>
-                    <p className="text-white/70">
-                      Monday - Friday: 9:00 AM - 6:00 PM EST<br />
-                      Saturday - Sunday: Closed
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Investment Inquiries */}
-              <div className="mt-12 p-6 bg-card/50 backdrop-blur-sm rounded border border-white/10">
-                <h3 className="text-lg font-medium text-white/90 mb-4">Investment Inquiries</h3>
-                <p className="text-white/70 mb-4 font-light leading-relaxed">
-                  For investment opportunities and partnership discussions, please 
-                  contact our investment team directly at:
-                </p>
-                <p className="font-medium text-white/90">investments@huxco.com</p>
-              </div>
+            {/* Additional Context */}
+            <div className="mt-12 text-center">
+              <p className="text-white/50 font-light leading-relaxed max-w-lg mx-auto">
+                We're seeking founders who aren't just building products, but architecting 
+                the substrate for humanity's next epoch. If that's you, we should talk.
+              </p>
             </div>
           </div>
         </div>
