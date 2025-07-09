@@ -20,9 +20,7 @@ const Home = () => {
                 Our Thesis
                 <ArrowRight className="ml-2 h-4 w-4" />
               </NavLink>
-              <NavLink to="/contact" className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:bg-white/5 hover:border-white/40 transition-all duration-200">
-                Share Your Blueprint
-              </NavLink>
+              <NavLink to="/contact" className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:bg-white/5 hover:border-white/40 transition-all duration-200">Share Your Future</NavLink>
             </div>
           </div>
         </div>
@@ -35,37 +33,24 @@ const Home = () => {
             <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">
               The Three Forces We Bet On
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
-              We back technologies that rewire trust, intelligence, and reality itself.
-            </p>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">We back technologies that rewire trust, intelligence, and matter.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
               <h3 className="text-xl font-medium mb-4 text-white/90">Unbreakable Systems</h3>
-              <p className="text-white/60 font-light leading-relaxed">
-                Decentralized architectures that resist capture, coercion, and collapse. 
-                Trustless, permissionless networks designed to encode incorruptible rules 
-                into the fabric of the digital world.
-              </p>
+              <p className="text-white/60 font-light leading-relaxed">Decentralized architectures that resist capture, coercion, and collapse. Trustless, permissionless networks designed to encode incorruptible rules into the fabric of the digital world.</p>
             </div>
 
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
               <h3 className="text-xl font-medium mb-4 text-white/90">Intelligent Infrastructure</h3>
-              <p className="text-white/60 font-light leading-relaxed">
-                AI-native platforms that learn, reason, and optimize across scale. 
-                From autonomous agents to adaptive tools, this pillar represents 
-                cognition embedded in code.
-              </p>
+              <p className="text-white/60 font-light leading-relaxed">AI-native platforms that learn, reason, and optimize at scale. From autonomous agents to adaptive tools. We seek cognition embedded in code that increases humanity's bandwidth.</p>
             </div>
 
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
               <h3 className="text-xl font-medium mb-4 text-white/90">Atomic Breakthroughs</h3>
-              <p className="text-white/60 font-light leading-relaxed">
-                AI applied to matter: biotech, energy, robotics, and manufacturing. 
-                Civilization-scale technologies born from solving problems 
-                in atoms, not bits.
-              </p>
+              <p className="text-white/60 font-light leading-relaxed">Our greatest tools applied to matter: biotech, energy, robotics, manufacturing, space. 
+Civilization-scale technologies solving problems in atoms, not bits.</p>
             </div>
           </div>
         </div>
