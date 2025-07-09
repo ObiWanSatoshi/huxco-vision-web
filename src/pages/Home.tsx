@@ -61,25 +61,9 @@ Civilization-scale technologies solving problems in atoms, not bits.</p>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Investment Focus</h2>
-            <p className="text-xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">We back outliers—builders with lived edge, deep conviction, and a non-consensus view of the future.
-
-We invest broadly across the above verticals, seeking founders that crave the unknown.
-
-
-Some arrive at brilliance through hardship, obsession, or the scars of constraint. 
-
-All share an uncommon trait—a deep hunger for the unknown.
-
-
-
-
-We look for:
-
-A compelling and contrarian view of the future
-
-Hard-earned insight from direct exposure to the problem
-
-Clear leverage in capturing a large or emerging market</p>
+            <p className="text-xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">We back outliers—builders with lived edge, deep conviction, and a non-consensus view of the future. We invest broadly across the above verticals, seeking founders that crave the unknown. 
+Some arrive at brilliance through hardship, obsession, or the scars of constraint.  
+All share an uncommon trait—a deep hunger for the unknown.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
