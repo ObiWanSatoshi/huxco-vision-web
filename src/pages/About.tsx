@@ -6,7 +6,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">The Genesis of HuxCo</h1>
-            <p className="text-xl text-white/70 leading-relaxed font-light">We emerged from the conviction that civilization stands at a pivotal moment inflection point in a 10,000 years arc of technology progress. For the first time, the very substract of trust, intelligence, and matter itself can—and will—be rewritten.</p>
+            <p className="text-xl text-white/70 leading-relaxed font-light">We emerged from the conviction that civilization stands at a pivotal moment inflection point in a 10,000 years arc of technology progress. For the first time, the very substrate of trust, intelligence, and matter itself can—and will—be rewritten.</p>
           </div>
         </div>
       </section>
