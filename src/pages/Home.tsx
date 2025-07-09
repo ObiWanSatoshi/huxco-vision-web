@@ -1,10 +1,7 @@
-
 import { ArrowRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
-
 const Home = () => {
-  return (
-    <div className="bg-black text-white">
+  return <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="relative minimal-gradient">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
@@ -16,27 +13,14 @@ const Home = () => {
                 Humanity's Golden Era
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">
-              A venture firm backing the builders of cryptographic trust, 
-              intelligent systems, and civilization-scale technologies.
-            </p>
-            <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">
-              We stand at the threshold of an epoch where immutable systems, 
-              intelligent infrastructure, and atomic breakthroughs converge 
-              to redefine the substrate of human civilization.
-            </p>
+            <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">A venture firm backing the builders of civilization-scale technologies.</p>
+            <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">We stand at the threshold of a new epoch where immutable systems, intelligent infrastructure, and atomic breakthroughs converge to redefine the substrate of reality.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <NavLink
-                to="/thesis"
-                className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20"
-              >
+              <NavLink to="/thesis" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20">
                 Our Thesis
                 <ArrowRight className="ml-2 h-4 w-4" />
               </NavLink>
-              <NavLink
-                to="/contact"
-                className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:bg-white/5 hover:border-white/40 transition-all duration-200"
-              >
+              <NavLink to="/contact" className="inline-flex items-center px-8 py-4 border border-white/30 text-white font-medium rounded hover:bg-white/5 hover:border-white/40 transition-all duration-200">
                 Share Your Blueprint
               </NavLink>
             </div>
@@ -146,17 +130,12 @@ const Home = () => {
             Let's talk. We partner with builders who see the same epochal shift—and 
             have the conviction to architect it.
           </p>
-          <NavLink
-            to="/contact"
-            className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20"
-          >
+          <NavLink to="/contact" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20">
             Start a Conversation
             <ArrowRight className="ml-2 h-4 w-4" />
           </NavLink>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
