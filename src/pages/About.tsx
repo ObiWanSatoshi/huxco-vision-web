@@ -37,9 +37,7 @@ const About = () => {
                 <Globe className="h-8 w-8 text-white/80" />
               </div>
               <h3 className="text-xl font-medium mb-4 text-white/90">Immutable Truth</h3>
-              <p className="text-white/60 font-light leading-relaxed">
-                Over mutable authority. We back systems that encode veracity into their very architecture.
-              </p>
+              <p className="text-white/60 font-light leading-relaxed">We back systems that encode transparency into their architecture helping navigate an increasingly complex world.</p>
             </div>
 
             <div className="text-center group">
@@ -47,9 +45,7 @@ const About = () => {
                 <Zap className="h-8 w-8 text-white/80" />
               </div>
               <h3 className="text-xl font-medium mb-4 text-white/90">Aligned Intelligence</h3>
-              <p className="text-white/60 font-light leading-relaxed">
-                In service of life. Cognition that improves itself while remaining aligned with human flourishing.
-              </p>
+              <p className="text-white/60 font-light leading-relaxed">Cognition that improves itself while remaining aligned with human flourishing. Symbiosis with inorganic minds.</p>
             </div>
 
             <div className="text-center group">
