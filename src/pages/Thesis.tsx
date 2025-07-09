@@ -6,7 +6,7 @@ const Thesis = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-light leading-tight mb-6 tracking-tight">Investment Thesis</h1>
-            <p className="text-xl text-white/70 leading-relaxed font-light">As a species we stand before a critical crossroad that necessitates the fusion of ancient wisdom built over thousands of years of enquiry into human existence with modern, recent learnings. In doing so, we should attempt to glean a clear understanding of what values and teachings we must code into tomorrow so that only the best of our traits endure in our increasingly digital future.</p>
+            <p className="text-xl text-white/70 leading-relaxed font-light">As a species we stand before a critical crossroad that necessitates the fusion of ancient wisdom built over thousands of years of enquiry into human existence with modern, recent learnings.</p>
           </div>
         </div>
       </section>
