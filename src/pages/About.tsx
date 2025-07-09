@@ -46,7 +46,7 @@ const About = () => {
               <div className="w-16 h-16 bg-white/10 rounded flex items-center justify-center mx-auto mb-6 group-hover:bg-white/15 transition-all duration-300">
                 <Zap className="h-8 w-8 text-white/80" />
               </div>
-              <h3 className="text-xl font-medium mb-4 text-white/90">Self-Evolving Intelligence</h3>
+              <h3 className="text-xl font-medium mb-4 text-white/90">Aligned Intelligence</h3>
               <p className="text-white/60 font-light leading-relaxed">
                 In service of life. Cognition that improves itself while remaining aligned with human flourishing.
               </p>
