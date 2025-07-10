@@ -14,7 +14,7 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">A venture firm backing the builders of civilization-scale technologies.</p>
-            <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">We stand at the threshold of a new epoch where immutable systems, intelligent infrastructure, and atomic breakthroughs converge to redefine the substrate of reality.</p>
+            <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">We stand at the threshold of a new era where immutable systems, intelligent infrastructure, and atomic breakthroughs converge to redefine the substrate of reality.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <NavLink to="/thesis" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20">
                 Our Thesis
