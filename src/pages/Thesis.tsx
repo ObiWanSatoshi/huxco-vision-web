@@ -114,7 +114,7 @@ const Thesis = () => {
                   <h4 className="text-lg font-medium text-white/90 mb-4">Technologies We Back:</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-card/30 p-4 rounded border border-white/5">
-                      <h5 className="font-medium text-white/90 mb-2">AI-Driven Biotech</h5>
+                      <h5 className="font-medium text-white/90 mb-2">Biotech</h5>
                       <p className="text-sm text-white/60 font-light">Computational biology and drug discovery</p>
                     </div>
                     <div className="bg-card/30 p-4 rounded border border-white/5">
