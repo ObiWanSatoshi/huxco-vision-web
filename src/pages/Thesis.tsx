@@ -171,14 +171,14 @@ const Thesis = () => {
                     <CheckCircle className="h-6 w-6 text-white/80 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-white/90">Applies computation to atoms</h4>
-                      <p className="text-white/60 font-light leading-relaxed">Solving humanity's hardest problems in the physical world</p>
+                      <p className="text-white/60 font-light leading-relaxed">Solving humanity's hardest physical problems </p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <CheckCircle className="h-6 w-6 text-white/80 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-white/90">Possesses civilizational scope</h4>
-                      <p className="text-white/60 font-light leading-relaxed">Technologies that reshape how billions coordinate and create</p>
+                      <p className="text-white/60 font-light leading-relaxed">Tech that reshapes how billions coordinate and create</p>
                     </div>
                   </div>
                 </div>
