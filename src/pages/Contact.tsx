@@ -1,9 +1,6 @@
-
 import { Mail } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <div className="bg-black text-white">
+  return <div className="bg-black text-white">
       {/* Hero Section */}
       <section className="minimal-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +25,7 @@ const Contact = () => {
                   <svg viewBox="0 0 100 100" className="w-full h-full">
                     <defs>
                       <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.5"/>
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.5" />
                       </pattern>
                     </defs>
                     <rect width="100" height="100" fill="url(#grid)" />
@@ -44,17 +41,19 @@ const Contact = () => {
                     <Mail className="h-10 w-10 text-white/80" />
                   </div>
                   {/* Orbital rings */}
-                  <div className="absolute inset-0 border border-white/20 rounded-full animate-spin" style={{ animationDuration: '8s' }}></div>
-                  <div className="absolute inset-[-8px] border border-white/10 rounded-full animate-spin" style={{ animationDuration: '12s', animationDirection: 'reverse' }}></div>
+                  <div className="absolute inset-0 border border-white/20 rounded-full animate-spin" style={{
+                  animationDuration: '8s'
+                }}></div>
+                  <div className="absolute inset-[-8px] border border-white/10 rounded-full animate-spin" style={{
+                  animationDuration: '12s',
+                  animationDirection: 'reverse'
+                }}></div>
                 </div>
 
-                <h2 className="text-2xl font-light mb-6 text-white/90 tracking-tight">Ready to Forge Tomorrow?</h2>
+                <h2 className="text-2xl font-light mb-6 text-white/90 tracking-tight">Ready to forge tomorrow?</h2>
                 
                 <div className="mb-8">
-                  <a 
-                    href="mailto:forge@huxcogroup.com" 
-                    className="inline-flex items-center text-xl font-medium text-white/90 hover:text-white transition-colors"
-                  >
+                  <a href="mailto:forge@huxcogroup.com" className="inline-flex items-center text-xl font-medium text-white/90 hover:text-white transition-colors">
                     forge@huxcogroup.com
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -79,8 +78,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
