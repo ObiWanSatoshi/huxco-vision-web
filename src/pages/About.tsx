@@ -96,20 +96,20 @@ const About = () => {
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-light text-white/90 mb-2">Pre-Seed</div>
-                  <div className="text-sm text-white/60">Stage</div>
+                  <div className="text-3xl font-light text-white/90 mb-2">Seed Focus</div>
+                  <div className="text-sm text-white/60">With ability to size select later-stage opportunities</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">$100K - 2M</div>
-                  <div className="text-sm text-white/60">Cheque Sizes</div>
+                  <div className="text-sm text-white/60">Average cheque size at the pre-seed/seed stage</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Global</div>
-                  <div className="text-sm text-white/60">With a EU/US Presence</div>
+                  <div className="text-sm text-white/60">With a EU/US presence</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Contrarian</div>
-                  <div className="text-sm text-white/60">Founders & Bets</div>
+                  <div className="text-sm text-white/60">Founders and investments</div>
                 </div>
               </div>
             </div>
