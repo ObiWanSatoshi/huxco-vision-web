@@ -204,10 +204,7 @@ const Thesis = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-light mb-6 tracking-tight">If This Reads Like Your Roadmap</h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
-              If you're engineering trust that can't be tampered with, intelligence that improves itself, 
-              or technology that moves atoms with software precision—our capital is yours to wield.
-            </p>
+            <p className="text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">We want to talk to you</p>
           </div>
         </div>
       </section>
