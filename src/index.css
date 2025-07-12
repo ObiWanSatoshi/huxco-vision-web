@@ -62,7 +62,7 @@
   }
 }
 
-/* Minimal utility classes */
+/* Advanced Animations & Interactive Elements */
 @layer utilities {
   .bg-tech-accent {
     background-color: hsl(var(--tech-accent));
@@ -81,5 +81,204 @@
   
   .minimal-gradient {
     background: linear-gradient(180deg, hsl(var(--card)) 0%, hsl(var(--background)) 100%);
+  }
+
+  /* Floating animations */
+  .animate-float-slow {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-medium {
+    animation: float 4s ease-in-out infinite 1s;
+  }
+  
+  .animate-float-fast {
+    animation: float 3s ease-in-out infinite 0.5s;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 4s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  /* Text reveal animations */
+  .animate-text-reveal {
+    animation: text-reveal 0.8s ease-out forwards;
+  }
+
+  /* Glitch effect for special elements */
+  .glitch-text {
+    position: relative;
+  }
+
+  .glitch-text::before,
+  .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .glitch-text:hover::before {
+    animation: glitch-1 0.3s ease-in-out;
+    color: hsl(var(--tech-accent));
+    z-index: -1;
+  }
+
+  .glitch-text:hover::after {
+    animation: glitch-2 0.3s ease-in-out;
+    color: hsl(0, 100%, 50%);
+    z-index: -2;
+  }
+
+  /* Morphing background */
+  .morph-bg {
+    background: radial-gradient(
+      ellipse at center,
+      hsla(210, 15%, 25%, 0.1) 0%,
+      transparent 50%
+    );
+    animation: morph 8s ease-in-out infinite;
+  }
+
+  /* Interactive hover zones */
+  .interactive-zone {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .interactive-zone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsla(210, 15%, 25%, 0.3),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .interactive-zone:hover::before {
+    left: 100%;
+  }
+}
+
+/* Keyframe animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes text-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glitch-1 {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(-2px, -2px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(2px, 2px);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(2px, -2px);
+    opacity: 1;
+  }
+}
+
+@keyframes glitch-2 {
+  0%, 100% {
+    transform: translate(0);
+    opacity: 0;
+  }
+  20% {
+    transform: translate(2px, -2px);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(2px, 2px);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-2px, -2px);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-2px, 2px);
+    opacity: 1;
+  }
+}
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@keyframes grid-pulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Responsive considerations */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-slow,
+  .animate-float-medium,
+  .animate-float-fast,
+  .animate-pulse-slow,
+  .animate-spin-slow {
+    animation: none;
   }
 }
