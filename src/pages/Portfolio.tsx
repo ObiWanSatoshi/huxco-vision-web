@@ -96,10 +96,7 @@ const Portfolio = () => {
           <div className="text-center">
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 max-w-2xl mx-auto">
               <h3 className="text-xl font-medium text-white/90 mb-4">Stealth Mode</h3>
-              <p className="text-white/70 font-light leading-relaxed">
-                Many of our portfolio companies operate in stealth, building the future 
-                before the world is ready to see it. When they emerge, the paradigm shifts.
-              </p>
+              <p className="text-white/70 font-light leading-relaxed">Many of our early stage portfolio companies are operating in stealth,</p>
             </div>
           </div>
         </div>
