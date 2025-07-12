@@ -142,10 +142,8 @@ const Thesis = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light mb-4 tracking-tight">Our Approach</h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
-              We invest pre-seed to seed, typically $100K-$2M, when the technical question 
-              is still the biggest question.
-            </p>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">We invest pre-seed to seed, typically $100K-$2M.
+Our vehicle possesses the ability to scale substantially for select late-stage plays.</p>
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm p-12 rounded border border-white/10">
