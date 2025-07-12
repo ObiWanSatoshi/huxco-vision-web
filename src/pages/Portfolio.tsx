@@ -9,7 +9,7 @@ const Portfolio = () => {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png"
     }, {
       name: "Ethereum", 
-      logo: "https://ethereum.org/static/6b935ac0e6194247347855dc3d328e83/6ed5f/eth-diamond-black.png"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"
     }, {
       name: "Solana",
       logo: "https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png"
@@ -25,20 +25,20 @@ const Portfolio = () => {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
     }, {
       name: "Galaxy Digital",
-      logo: "https://galaxydigital.io/wp-content/uploads/2021/06/Galaxy-Digital-Logo-White.png"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Galaxy_Digital_logo.svg/2560px-Galaxy_Digital_logo.svg.png"
     }]
   }, {
     title: "Atomic Breakthroughs",
     subtitle: "AI applied to matter itself",
     companies: [{
       name: "Apptronik",
-      logo: "https://apptronik.com/wp-content/uploads/2023/08/Apptronik-Logo-Full-Color-RGB.png"
+      logo: "https://media.licdn.com/dms/image/C4E0BAQHQf9z9z9z9z9/company-logo_200_200/0/1630511057000?e=2147483647&v=beta&t=0"
     }, {
       name: "Anduril",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Anduril_Industries_logo.svg/1200px-Anduril_Industries_logo.svg.png"
+      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Anduril_logo.svg/2560px-Anduril_logo.svg.png"
     }, {
       name: "Molecule",
-      logo: "https://molecule.to/assets/img/molecule-logo-black.png"
+      logo: "https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/erkxwhl1gdu48p7qsOs6"
     }]
   }];
 
