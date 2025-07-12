@@ -70,10 +70,7 @@ const Contact = () => {
 
             {/* Additional Context */}
             <div className="mt-12 text-center">
-              <p className="text-white/50 font-light leading-relaxed max-w-lg mx-auto">
-                We're seeking founders who aren't just building products, but architecting 
-                the substrate for humanity's next epoch. If that's you, we should talk.
-              </p>
+              <p className="text-white/50 font-light leading-relaxed max-w-lg mx-auto">We're seeking founders who aren't just building products. They are chasing civilization-scale markets that impact our trajectory as a species.</p>
             </div>
           </div>
         </div>
