@@ -126,8 +126,8 @@ const Thesis = () => {
                       <p className="text-sm text-white/60 font-light">Next-generation power generation</p>
                     </div>
                     <div className="bg-card/30 p-4 rounded border border-white/5">
-                      <h5 className="font-medium text-white/90 mb-2">Material Science</h5>
-                      <p className="text-sm text-white/60 font-light">Programmable matter and metamaterials</p>
+                      <h5 className="font-medium text-white/90 mb-2">Space</h5>
+                      <p className="text-sm text-white/60 font-light">Pioneering our journey beyond Earth</p>
                     </div>
                   </div>
                 </div>
