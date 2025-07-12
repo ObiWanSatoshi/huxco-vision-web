@@ -108,8 +108,8 @@ const About = () => {
                   <div className="text-sm text-white/60">With a EU/US Presence</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-light text-white/90 mb-2">Epoch</div>
-                  <div className="text-sm text-white/60">Defining</div>
+                  <div className="text-3xl font-light text-white/90 mb-2">Contrarian</div>
+                  <div className="text-sm text-white/60">Founders & Bets</div>
                 </div>
               </div>
             </div>
