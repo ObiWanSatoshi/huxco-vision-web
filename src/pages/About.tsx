@@ -97,15 +97,15 @@ const About = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Pre-Seed</div>
-                  <div className="text-sm text-white/60">to Seed</div>
+                  <div className="text-sm text-white/60">Stage</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-light text-white/90 mb-2">$100K</div>
-                  <div className="text-sm text-white/60">to $2M</div>
+                  <div className="text-3xl font-light text-white/90 mb-2">$100K - 2M</div>
+                  <div className="text-sm text-white/60">Cheque Sizes</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Global</div>
-                  <div className="text-sm text-white/60">Remote-First</div>
+                  <div className="text-sm text-white/60">With a EU/US Presence</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Epoch</div>
