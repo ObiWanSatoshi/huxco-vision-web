@@ -1,3 +1,4 @@
+
 import { Users, Award, Globe, Zap } from 'lucide-react';
 const About = () => {
   return <div className="bg-black text-white">
@@ -16,7 +17,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light mb-6 tracking-tight">Our Mission</h2>
-            <p className="text-2xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">We back primitives that harden trust, awaken intelligence, and grant humanity leverage to bring about an unimaginably abundant future.</p>
+            <p className="text-2xl text-white/80 max-w-4xl mx-auto font-light leading-relaxed">We deploy proprietary capital to back primitives that harden trust, awaken intelligence, and grant humanity leverage to bring about an unimaginably abundant future.</p>
           </div>
         </div>
       </section>
@@ -83,7 +84,7 @@ const About = () => {
               <h2 className="text-3xl font-light mb-6 tracking-tight">Our Approach</h2>
               <div className="space-y-4 text-white/70 font-light leading-relaxed">
                 <p>
-                  We are not operators seeking exits. We are archaeologists of the future, 
+                  We are not fund managers seeking exits for external LPs. We are archaeologists of the future, 
                   identifying the technologies that will define the next century of human experience.
                 </p>
                 <p>
@@ -96,12 +97,12 @@ const About = () => {
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-light text-white/90 mb-2">Seed Focus</div>
-                  <div className="text-sm text-white/60">With ability to size select later-stage opportunities</div>
+                  <div className="text-3xl font-light text-white/90 mb-2">Proprietary</div>
+                  <div className="text-sm text-white/60">Capital deployment from our own balance sheet</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">$100K - 2M</div>
-                  <div className="text-sm text-white/60">Average cheque size at the pre-seed/seed stage</div>
+                  <div className="text-sm text-white/60">Initial investment range at pre-seed/seed stage</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-light text-white/90 mb-2">Global</div>

@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
                 Humanity's Golden Era
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">A venture firm backing the builders of civilization-scale technologies.</p>
+            <p className="text-xl md:text-2xl text-white/70 mb-8 leading-relaxed font-light">A proprietary investment vehicle backing the builders of civilization-scale technologies.</p>
             <p className="text-lg text-white/60 mb-12 leading-relaxed font-light max-w-3xl">We stand at the threshold of a new era where immutable systems, intelligent infrastructure, and atomic breakthroughs converge to redefine the substrate of reality.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <NavLink to="/thesis" className="inline-flex items-center px-8 py-4 bg-white/10 text-white font-medium rounded hover:bg-white/15 transition-all duration-200 border border-white/20">
@@ -49,7 +50,7 @@ const Home = () => {
 
             <div className="bg-card/50 backdrop-blur-sm p-8 rounded border border-white/10 hover:bg-card/70 transition-all duration-300">
               <h3 className="text-xl font-medium mb-4 text-white/90">Atomic Breakthroughs</h3>
-              <p className="text-white/60 font-light leading-relaxed">Our greatest tools applied to matter: biotech, energy, robotics, manufacturing, space. 
+              <p className="text-white/60 font-light leading-relaxed">Our greatest tools applied to matter: biotech, energy, robotics, manufacturing, space. 
 Civilization-scale technologies solving problems in atoms, not bits.</p>
             </div>
           </div>
@@ -61,7 +62,7 @@ Civilization-scale technologies solving problems in atoms, not bits.</p>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Investment Focus</h2>
-            <p className="text-xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">We back outliers—builders with lived edge, deep conviction, and a non-consensus view of the future. We invest broadly across the above verticals, seeking founders that crave the unknown.  Some arrive at brilliance through hardship, obsession, or the scars of constraint.  All share an uncommon trait—a deep hunger for the unknown.</p>
+            <p className="text-xl text-white/70 max-w-4xl mx-auto font-light leading-relaxed">Using our own capital, we back outliers—builders with lived edge, deep conviction, and a non-consensus view of the future. We invest broadly across the above verticals, seeking founders that crave the unknown. Some arrive at brilliance through hardship, obsession, or the scars of constraint. All share an uncommon trait—a deep hunger for the unknown.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -1,4 +1,5 @@
 
+
 import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 
@@ -11,8 +12,8 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Logo className="mb-4" />
             <p className="text-white/60 mb-4 max-w-md text-sm leading-relaxed">
-              A boutique venture capital firm investing in the evolution of the web 
-              through crypto, AI, and deep tech innovations.
+              A proprietary investment vehicle deploying capital to advance the evolution 
+              of the web through crypto, AI, and deep tech innovations.
             </p>
           </div>
 
@@ -47,7 +48,7 @@ const Footer = () => {
             </p>
             <div className="mt-4 md:mt-0">
               <p className="text-white/40 text-xs">
-                Investing in the evolution of the web.
+                Proprietary capital deployment. No external LPs.
               </p>
             </div>
           </div>
@@ -58,3 +59,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

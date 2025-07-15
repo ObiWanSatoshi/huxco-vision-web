@@ -17,7 +17,7 @@ const Thesis = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light mb-4 tracking-tight">The Three Forces We Back</h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
-              We invest in technologies that rewire the fundamental substrates of trust, 
+              We deploy proprietary capital in technologies that rewire the fundamental substrates of trust, 
               intelligence, and reality itself.
             </p>
           </div>
@@ -142,7 +142,7 @@ const Thesis = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-light mb-4 tracking-tight">Our Approach</h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">We invest pre-seed to seed, typically $100K-$2M. Our vehicle possesses the ability to scale substantially for select later-stage opportunities.</p>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">We deploy proprietary capital pre-seed to seed, typically $100K-$2M. Our vehicle possesses the ability to scale substantially for select later-stage opportunities.</p>
           </div>
 
           <div className="bg-card/50 backdrop-blur-sm p-12 rounded border border-white/10">
@@ -168,7 +168,7 @@ const Thesis = () => {
                     <CheckCircle className="h-6 w-6 text-white/80 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-medium text-white/90">Applies computation to atoms</h4>
-                      <p className="text-white/60 font-light leading-relaxed">Solving humanity's hardest physical problems </p>
+                      <p className="text-white/60 font-light leading-relaxed">Solving humanity's hardest physical problems </p>
                     </div>
                   </div>
                   <div className="flex items-start">
