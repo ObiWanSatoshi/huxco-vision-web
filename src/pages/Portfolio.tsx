@@ -25,20 +25,20 @@ const Portfolio = () => {
       logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
     }, {
       name: "Galaxy Digital",
-      logo: "https://cryptologos.cc/logos/galaxy-digital-glxy-logo.png"
+      logo: "/lovable-uploads/82a0ae4b-7979-48b0-b301-b3c14166c211.png"
     }]
   }, {
     title: "Atomic Breakthroughs",
     subtitle: "AI applied to matter itself",
     companies: [{
       name: "Apptronik",
-      logo: "https://www.apptronik.com/wp-content/uploads/2023/08/apptronik-logo-white.png"
+      logo: "/lovable-uploads/6726a217-7649-4780-8f51-5c554768cb07.png"
     }, {
       name: "Anduril",
-      logo: "https://www.anduril.com/assets/logo-white.svg"
+      logo: "/lovable-uploads/527b4be1-2046-4cb6-a121-5834977fed35.png"
     }, {
       name: "Molecule",
-      logo: "https://molecule.to/static/molecule-logo.png"
+      logo: "/lovable-uploads/33c0719f-3699-4b56-ace5-2264caf49ff2.png"
     }]
   }];
 
