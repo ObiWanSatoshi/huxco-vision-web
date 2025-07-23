@@ -1,4 +1,3 @@
-
 const Cookies = () => {
   return (
     <div className="bg-black text-white">
@@ -93,8 +92,6 @@ const Cookies = () => {
               If you have any questions about this Cookie Policy, please contact us at:
               <br />
               Email: privacy@huxco.com
-              <br />
-              Phone: +1 (555) 123-4567
             </p>
           </section>
         </div>

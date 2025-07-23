@@ -1,4 +1,3 @@
-
 const Terms = () => {
   return (
     <div className="bg-black text-white">
@@ -72,8 +71,6 @@ const Terms = () => {
               For questions about these Terms & Conditions, please contact us at:
               <br />
               Email: legal@huxco.com
-              <br />
-              Phone: +1 (555) 123-4567
             </p>
           </section>
         </div>
